@@ -2,9 +2,9 @@ public interface Queue<E> {
 
     void enqueue(E x);
 
-    boolean add() throws ExceptionIsEmpty;
+    boolean add(E x);
 
-    boolean offer() throws ExceptionIsEmpty;
+    boolean offer(E x) throws ExceptionIsEmpty;
 
     E remove() throws ExceptionIsEmpty;
 

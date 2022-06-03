@@ -1,4 +1,11 @@
-public class QueueLink implements Queue {
+public class QueueLink<E> implements Queue<E> {
+
+    private Node<E> first, last;
+
+    public QueueLink() {
+        this.first = null;
+        this.last = null;
+    }
 
     @Override
     public void enqueue(Object x) {
@@ -7,45 +14,56 @@ public class QueueLink implements Queue {
     }
 
     @Override
-    public boolean add() throws ExceptionIsEmpty {
+    public boolean add(E x) {
+        Node<E> aux = new Node<E>(x);
+        if (this.isEmpty()) {
+            this.first = aux;
+            this.last = this.first;
+        } else {
+            this.last.setNext(aux);
+            this.last = aux;
+        }
+        return true;
+    }
+
+    // para colas con capacidad restringida
+    @Override
+    public boolean offer(E x) throws ExceptionIsEmpty {
         // TODO Auto-generated method stub
         return false;
     }
 
     @Override
-    public boolean offer() throws ExceptionIsEmpty {
-        // TODO Auto-generated method stub
-        return false;
+    public E remove() throws ExceptionIsEmpty {
+        if (isEmpty()) {
+            throw new ExceptionIsEmpty("Queue vacio");
+        }
+        Node<E> item = this.first;
+        this.first = this.first.getNext();
+        return item.getData();
     }
 
     @Override
-    public Object remove() throws ExceptionIsEmpty {
-        // TODO Auto-generated method stub
-        return null;
-    }
-
-    @Override
-    public Object pull() {
+    public E pull() {
         // TODO Auto-generated method stub
         return null;
     }
 
     @Override
-    public Object element() {
+    public E element() {
         // TODO Auto-generated method stub
         return null;
     }
 
     @Override
-    public Object peek() {
+    public E peek() {
         // TODO Auto-generated method stub
         return null;
     }
 
     @Override
     public boolean isEmpty() {
-        // TODO Auto-generated method stub
-        return false;
+        return first == null;
     }
 
 }
