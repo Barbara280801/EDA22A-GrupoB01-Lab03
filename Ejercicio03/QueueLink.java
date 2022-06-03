@@ -38,15 +38,21 @@ public class QueueLink<E> implements Queue<E> {
     }
 
     @Override
-    public E pull() {
-        // TODO Auto-generated method stub
-        return null;
+    public E poll() {
+        if (isEmpty()) {
+            return null;
+        }
+        Node<E> item = this.first;
+        this.first = this.first.getNext();
+        return item.getData();
     }
 
     @Override
-    public E element() {
-        // TODO Auto-generated method stub
-        return null;
+    public E element() throws ExceptionIsEmpty {
+        if (isEmpty())
+            throw new ExceptionIsEmpty("Queue vacio");
+
+        return this.first.getData();
     }
 
     @Override

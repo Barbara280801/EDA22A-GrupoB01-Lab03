@@ -6,11 +6,12 @@ public interface Queue<E> {
 
     E remove() throws ExceptionIsEmpty;
 
-    E pull();
+    E poll();
 
-    E element();
+    E element() throws ExceptionIsEmpty;
 
     E peek();
 
     boolean isEmpty();
+
 }
