@@ -8,12 +8,6 @@ public class QueueLink<E> implements Queue<E> {
     }
 
     @Override
-    public void enqueue(Object x) {
-        // TODO Auto-generated method stub
-
-    }
-
-    @Override
     public boolean add(E x) {
         Node<E> aux = new Node<E>(x);
         if (this.isEmpty()) {

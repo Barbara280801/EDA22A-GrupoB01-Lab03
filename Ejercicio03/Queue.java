@@ -1,7 +1,5 @@
 public interface Queue<E> {
 
-    void enqueue(E x);
-
     boolean add(E x);
 
     boolean offer(E x) throws ExceptionIsEmpty;
