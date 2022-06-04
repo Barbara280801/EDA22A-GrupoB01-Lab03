@@ -11,8 +11,8 @@ public class SameStack {
 	public static int equalStacks(int[] h1, int[] h2, int[] h3) {
 		int[] sums = new int[3];
 		int[] arr1 = arrHeights(h1); 
-		int[] arr2 = arrHeights(h1); 
-		int[] arr3 = arrHeights(h1); 
+		int[] arr2 = arrHeights(h2); 
+		int[] arr3 = arrHeights(h3); 
 		int maxHeight = 0;
 		for (int n1 : arr1) {
 			for (int n2 : arr2) {		
@@ -20,6 +20,7 @@ public class SameStack {
 				if (n2 == n1) {
 					for (int n3 : arr3) {
 						if (n1 < n3) break;
+						System.out.println(n1 + " - " + n2 + " - " + n3);
 						if (n3 == n1)
 							maxHeight = n1;
 					}
