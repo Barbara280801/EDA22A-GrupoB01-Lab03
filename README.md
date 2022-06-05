@@ -64,7 +64,7 @@ I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS <br>
     ```sh
    <!-- tree -->
     ```
-* Cada integrante tenía la tarea de solucionar los ejercicios de agregando y/o modificando la información otorgada por las 
+* Cada integrante tenía la tarea de solucionar los ejercicios agregando y/o modificando la información obtenida en las 
   clases de teoría
     * Ejercicio 1
             
