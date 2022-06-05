@@ -62,41 +62,68 @@
 I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS <br>
 * La organización del repositorio es la siguiente
     ```sh
-   <!-- tree -->
+	   └───EDA22A-GrupoB01-Lab03
+	    │   README.md
+	    │
+	    ├───Ejercicio01
+	    │       SameStack.java
+	    │
+	    ├───Ejercicio02
+	    │       EmptyStackException.java
+	    │       Node.java
+	    │       Stack.java
+	    │       StackLink.java
+	    │       Test.java
+	    │
+	    └───Ejercicio03
+		    ExceptionIsEmpty.java
+		    Node.java
+		    NullPointerExeption.java
+		    Queue.java
+		    QueueLink.java
+		    Test.java
     ```
 * Cada integrante tenía la tarea de solucionar los ejercicios agregando y/o modificando la información obtenida en las 
   clases de teoría
     * Ejercicio 1: Pilas Iguales
       - En primer lugar se crea una función que devuelve un arreglo que acumula la altura constantemente
         ```java
-        public static int[] arrHeights(int[] h) {
-        ...
-            for (int i = 0; i < h.length; i++) {
-                sum += h[i];
-                heightsArr[i] = sum; 
-            }
-            return heightsArr;                                
-        }
+		public static int[] arrHeights(int[] h) {
+		...
+		    for (int i = 0; i < h.length; i++) {
+			sum += h[i];
+			heightsArr[i] = sum; 
+		    }
+		    return heightsArr;                                
+		}
         ```
       - Una vez con esta función, se completa la función equalStacks(), se crean los arreglos de alturas correspondientes a
         h1, h2 y h3. Después, en un bucle anidado se hacen las comparaciones entre cada arreglo, buscando una igualdad entre
         cada valor de cada arreglo.    
         ```java                                
-        for (int n1 : arr1) {
-	        for (int n2 : arr2) {		
-			if (n1 < n2) break;
-			if (n2 == n1) {
-				for (int n3 : arr3) {
-					if (n1 < n3) break;
-					if (n3 == n1)
-						maxHeight = n1;
+		for (int n1 : arr1) {
+			for (int n2 : arr2) {		
+				if (n1 < n2) break;
+				if (n2 == n1) {
+					for (int n3 : arr3) {
+						if (n1 < n3) break;
+						if (n3 == n1)
+							maxHeight = n1;
+					}
 				}
 			}
 		}
-	}
         ```
-      - Finalmente _maxHeight_ devolvera el valor de la altura común a las 3 pilas más alta, si es que existe
-      - _Ejemplos_                            
+      - Finalmente _maxHeight_ conservara y devolvera el valor de la altura común a las 3 pilas más alta, si es que existe
+      - Ejemplo, 3 pilas con las alturas de h1 = [5, 6, 1, 2, 3, 3, 5, 6], h2 = [2, 3, 4, 3, 1, 4, 9] y 
+	h3 = [3, 2, 4, 3 ,7], se dara el siguiente resultado.						
+	```java						    
+		La altura máxima es 12
+		Las alturas se reducen de la siguiente manera:
+			31 - 19 = 12
+			26 - 14 = 12
+			22 - 10 = 12
+	```						
     * Ejercicio 2
 
     * Ejercicio 3
