@@ -84,16 +84,16 @@ I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS <br>
         ```java                                
         for (int n1 : arr1) {
 	        for (int n2 : arr2) {		
-				if (n1 < n2) break;
-				if (n2 == n1) {
-					for (int n3 : arr3) {
-						if (n1 < n3) break;
-						if (n3 == n1)
-							maxHeight = n1;
-					}
+			if (n1 < n2) break;
+			if (n2 == n1) {
+				for (int n3 : arr3) {
+					if (n1 < n3) break;
+					if (n3 == n1)
+						maxHeight = n1;
 				}
 			}
 		}
+	}
         ```
       - Finalmente _maxHeight_ devolvera el valor de la altura común a las 3 pilas más alta, si es que existe
       - _Ejemplos_                            
