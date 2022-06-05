@@ -20,11 +20,21 @@ public class QueueLink<E> implements Queue<E> {
         return true;
     }
 
-    // para colas con capacidad restringida
+    // Método para colas con capacidad restringida
     @Override
-    public boolean offer(E x) throws ExceptionIsEmpty {
-        // TODO Auto-generated method stub
-        return false;
+    public boolean offer(E x) throws NullPointerExeption {
+        Node<E> aux = new Node<E>(x);
+        if (x == null) {
+            throw new NullPointerExeption("La cola no permite elementos nulos");
+        }
+        if (this.isEmpty()) {
+            this.first = aux;
+            this.last = this.first;
+        } else {
+            this.first.setNext(aux);
+            this.last = aux;
+        }
+        return true;
     }
 
     @Override
@@ -57,8 +67,7 @@ public class QueueLink<E> implements Queue<E> {
 
     @Override
     public E peek() {
-        // TODO Auto-generated method stub
-        return null;
+        return first.getData();
     }
 
     @Override
