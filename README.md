@@ -87,6 +87,10 @@ II. SOLUCIÓN DEL CUESTIONARIO
 
 III. CONCLUSIONES
 
+- Los Stacks (Pilas) pueden ser una estructura de datos sencilla con un comportamiento de tipo LIFO, teniendo diversas aplicaciones como en el uso de los compiladores. En cuanto a programación de sistemas nos permmite recuperar datos y parámetros, por otro lado, en lenguajes de programación puede garantizar llamadas anidadas.
+- Las Queue (Colas) poseen un comportamiento de tipo FIFO, primero en entrar primero en salir, usada en simulación de procesos como un método para simular las colas reales. Las aplicaciones son infinitas pero la más común sería la organización de tareas en una computadora.
+- Las estructuras de datos como las Pilas y Colas pueden resultar de gran ayuda donde se nota una gran aplicacion en el mundo de las computadoras. Cada estructura de datos tiene sus ventajas y desventajas, entonces hacer uso correcto de estas podría mejorar significativamente algunos procesos.
+    
 ---
     
 ## RETROALIMENTACIÓN GENERAL
