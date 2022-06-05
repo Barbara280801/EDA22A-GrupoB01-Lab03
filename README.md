@@ -87,10 +87,13 @@ II. SOLUCIÓN DEL CUESTIONARIO
 
 III. CONCLUSIONES
 
+---
+    
+## RETROALIMENTACIÓN GENERAL
 
 ---
-</div>    
-<p><b>REFERENCIAS Y BIBLIOGRAFÍA</b></p>
+    
+### REFERENCIAS Y BIBLIOGRAFÍA
 <ul>
     <li>https://www.w3schools.com/java/</li>
     <li>https://www.eclipse.org/downloads/packages/release/2022-03/r/eclipse-ide-enterprise-java-and-web-developers</li>
