@@ -60,15 +60,43 @@
 ---
 
 I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS <br>
-* La organización de la carpeta es la siguiente 
+* La organización del repositorio es la siguiente
     ```sh
    <!-- tree -->
     ```
 * Cada integrante tenía la tarea de solucionar los ejercicios agregando y/o modificando la información obtenida en las 
   clases de teoría
-    * Ejercicio 1
-            
-
+    * Ejercicio 1: Pilas Iguales
+      - En primer lugar se crea una función que devuelve un arreglo que acumula la altura constantemente
+        ```java
+        public static int[] arrHeights(int[] h) {
+        ...
+            for (int i = 0; i < h.length; i++) {
+                sum += h[i];
+                heightsArr[i] = sum; 
+            }
+            return heightsArr;                                
+        }
+        ```
+      - Una vez con esta función, se completa la función equalStacks(), se crean los arreglos de alturas correspondientes a
+        h1, h2 y h3. Después, en un bucle anidado se hacen las comparaciones entre cada arreglo, buscando una igualdad entre
+        cada valor de cada arreglo.    
+        ```java                                
+        for (int n1 : arr1) {
+	        for (int n2 : arr2) {		
+				if (n1 < n2) break;
+				if (n2 == n1) {
+					for (int n3 : arr3) {
+						if (n1 < n3) break;
+						if (n3 == n1)
+							maxHeight = n1;
+					}
+				}
+			}
+		}
+        ```
+      - Finalmente _maxHeight_ devolvera el valor de la altura común a las 3 pilas más alta, si es que existe
+      - _Ejemplos_                            
     * Ejercicio 2
 
     * Ejercicio 3
