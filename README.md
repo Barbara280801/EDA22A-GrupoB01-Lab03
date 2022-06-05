@@ -133,8 +133,11 @@ I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS <br>
 
 II. SOLUCIÓN DEL CUESTIONARIO
 
-* ¿Qué similitudes hay entre una Lista Enlazada y una Pila?
-  
+* ¿Qué similitudes hay entre una Lista Enlazada y una Pila? <br>
+  Se pueden destacar los siguientes. 
+   - Primero, su nivel abstracto
+   - Segundo, la inserción de nuevos nodos resulta similar, pues el 1er nodo insertado en ambos, es a su vez el último nodo. 
+   - Tercero, la lista enlazada puede adaptarse a una estrategia de búsqueda idéntica a la del Stack (FILO o LIFO).
 
 * ¿En que casos seria favorable/desfavorable utilizar Pila/Cola?
    
