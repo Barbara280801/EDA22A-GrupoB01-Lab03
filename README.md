@@ -54,44 +54,41 @@
 </tbody>
 </table>
 
-<table>
-<theader>
-<tr><th>Solución y resultados</th></tr>
-</theader>
-<tbody>
-<tr><td>I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS<br>
-  <ul>
-    <li>Ejercicio 1: Pilas iguales</li>
-    <li>Ejercicio 2: Pilas</li>
-    <li>Ejercicio 3: Colas</li>
-    </ul>
-    </td></tr>
-<tr><td>II. SOLUCIÓN DEL CUESTIONARIO<br>
-    ¿Qué similitudes hay entre una Lista Enlazada y una Pila?<br>
-<pre>
-</pre>
-    ¿En qué casos sería favorable/desfavorable utilizar Pila/Cola?<br>
-<pre>
-</pre>
-    </td></tr>
-<tr><td>III. CONCLUSIONES<br>
-    </td></tr>
-</tbody>
-</table>
+<!-- Reportes -->
+## SOLUCIÓN Y RESULTADOS
 
-<table>
-<theader>
-<tr><th>RETROALIMENTACIÓN GENERAL
-    </th></tr>
-</theader>
-<tbody>
-<tr><td>
-    <pre>                                                                                          </pre>
-    <pre>                                                                                          </pre>
-    </td></tr>
-</tbody>
-</table>
-    
+---
+
+I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS <br>
+* La organización de la carpeta es la siguiente 
+    ```sh
+   <!-- tree -->
+    ```
+* Cada integrante tenía la tarea de solucionar los ejercicios de agregando y/o modificando la información otorgada por las 
+  clases de teoría
+    * Ejercicio 1
+            
+
+    * Ejercicio 2
+
+    * Ejercicio 3
+
+     
+---
+
+II. SOLUCIÓN DEL CUESTIONARIO
+
+* ¿Qué similitudes hay entre una Lista Enlazada y una Pila?
+  
+
+* ¿En que casos seria favorable/desfavorable utilizar Pila/Cola?
+   
+---
+
+III. CONCLUSIONES
+
+
+---
 </div>    
 <p><b>REFERENCIAS Y BIBLIOGRAFÍA</b></p>
 <ul>
