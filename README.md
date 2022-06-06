@@ -186,7 +186,7 @@ II. SOLUCIÓN DEL CUESTIONARIO
     - Una cola es más compleja de implementar que una pila.
     - Una aplicación real en paginas web de las pilas es que pueden almacenar los sitios previamente visitados.
     - Con pilas podemos guardar estados y volver a ellos cuando se requiera.
-    - Una cola es útil cuando se necesita darle preferencia al que llegó primero, como sucede al momento de imprimir documentos.
+    - Una cola es útil cuando se necesita darle preferencia al que llegó primero, como sucede al momento de imprimir documentos.<br>
     Las pilas se utilizan en muchas aplicaciones que utilizamos con frecuencia: 
 	- Gestión de ventanas en Windows o Linux (cuando cerramos una ventana siempre recuperamos la que teníamos detrás).
 	- Evaluación general de cualquier expresión matemática para evitar tener que calcular el número de variables temporales que hacen falta.
