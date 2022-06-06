@@ -124,7 +124,44 @@ I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS <br>
 			26 - 14 = 12
 			22 - 10 = 12
 	```						
-    * Ejercicio 2
+    * Ejercicio 2: Pilas
+      - En este ejercicio implementamos los métodos: push, pop, peek, empty, search y toString, en la funcion push tomamos los
+	casos de que esté vacío o si ya hay elementos
+        ```java
+		if(empty()){
+                  this.tope = new Node<E>(x);
+                }else{
+                  tope = new Node<E>(x, tope);
+                }
+        ```
+      - Una vez con esta función, se completa la función equalStacks(), se crean los arreglos de alturas correspondientes a
+        h1, h2 y h3. Después, en un bucle anidado se hacen las comparaciones entre cada arreglo, buscando una igualdad entre
+        cada valor de cada arreglo.    
+        ```java                                
+		for (int n1 : arr1) {
+			for (int n2 : arr2) {		
+				if (n1 < n2) break;
+				if (n2 == n1) {
+					for (int n3 : arr3) {
+						if (n1 < n3) break;
+						if (n3 == n1)
+							maxHeight = n1;
+					}
+				}
+			}
+		}
+        ```
+      - Finalmente _maxHeight_ conservara y devolvera el valor de la altura común a las 3 pilas más alta, si es que existe
+      - Ejemplo, 3 pilas con las alturas de h1 = [5, 6, 1, 2, 3, 3, 5, 6], h2 = [2, 3, 4, 3, 1, 4, 9] y 
+	h3 = [3, 2, 4, 3 ,7], se dara el siguiente resultado.						
+	```java						    
+		La altura máxima es 12
+		Las alturas se reducen de la siguiente manera:
+			31 - 19 = 12
+			26 - 14 = 12
+			22 - 10 = 12
+	```			
+			
 
     * Ejercicio 3
 
