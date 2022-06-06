@@ -129,26 +129,23 @@ I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS <br>
     * Ejercicio 3
       - Creamos una interface con las funciones <code>add(E x), offer(E x), remove(), element(), peek() y isEmpty()</code>
       - Implementamos la interfaz en una clase genérica QueueLink<E>
-	```java
-	   public class QueueLink<E> implements Queue<E> {
-	   	...
-	   }	
-	```
-	- Creamos excepciones heredando de Exception. Ejemplo: 
-	```java
-	   public class NullPointerExeption extends Exception {
-		public NullPointerExeption() {
-        		super();
-		}
-	
-	   	public NullPointerExeption(String message) {
-        		super(message);
-	 	}
-	    }
-	```
-	
-	
-     
+        ```java
+		   public class QueueLink<E> implements Queue<E> {
+			...
+		   }	
+        ```
+      - Creamos excepciones heredando de Exception. Ejemplo: 
+        ```java
+		   public class NullPointerExeption extends Exception {
+			public NullPointerExeption() {
+				super();
+			}
+
+			public NullPointerExeption(String message) {
+				super(message);
+			}
+		    }
+        ```
 ---
 
 II. SOLUCIÓN DEL CUESTIONARIO
