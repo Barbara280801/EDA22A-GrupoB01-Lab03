@@ -192,7 +192,7 @@ II. SOLUCIÓN DEL CUESTIONARIO
 	- Evaluación general de cualquier expresión matemática para evitar tener que calcular el número de variables temporales que hacen falta.
 	- Navegador Web: Se almacenan los sitios previamente visitados cuando el usuario quiere regresar (presiona el botón de regresar).
 	- Editores de texto u otras herramientas: Los cambios efectuados se almacenan en una pila.<br>
-    Las colas se utilizan en muchas aplicaciones que utilizamos con frecuencia:
+    **Las colas se utilizan en muchas aplicaciones que utilizamos con frecuencia:**
 	- Impresión de documentos: Cuando imprimimos varios documentos, éstos se imprimen en el orden en que lo mandamos a imprimir.
 	- Los números de tickets para atender público.
 	- La simulación de cualquier cola de elementos. 
