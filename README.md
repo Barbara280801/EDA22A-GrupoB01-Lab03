@@ -124,7 +124,33 @@ I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS <br>
 			26 - 14 = 12
 			22 - 10 = 12
 	```						
-    * Ejercicio 2
+     * Ejercicio 2: Pilas
+      - Para implementar esta estructura, se implementó distintos datos como: push, pop, peek, empty, search y toString.
+      - En el método push se tomó dos casos, que la estructura esté vacía o si ya tenía elementos.
+        ```java
+		if(empty()){
+                  this.tope = new Node<E>(x);
+                }else{
+                  tope = new Node<E>(x, tope);
+                }
+        ```
+      - En el método de búsqueda (search), se recorrió nodo por nodo, comparando si el elemento a buscar era igual a el data
+	de cada Node.    
+        ```java                                
+		for (Node<E> i = this.tope; i!= null; i=i.getNext()) {
+                   if(x.equals(i.getData())){
+                     return true;
+                   }
+                }
+                return false;
+        ```
+      - En el método de toString también se recorre toda la estructura y se acumula el data en una cadena de Strings.	
+	```java						    
+		 String str = "";
+                 for (Node<E> i = this.tope; i!= null; i=i.getNext()) {
+                   str += i.toString()+ " - ";
+                 }
+	```		
       
     * Ejercicio 3
       - Creamos una interface con las funciones <code>add(E x), offer(E x), remove(), element(), peek() y isEmpty()</code>
