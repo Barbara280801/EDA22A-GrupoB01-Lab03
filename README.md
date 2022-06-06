@@ -187,6 +187,11 @@ II. SOLUCIÓN DEL CUESTIONARIO
     - Una aplicación real en paginas web de las pilas es que pueden almacenar los sitios previamente visitados.
     - Con pilas podemos guardar estados y volver a ellos cuando se requiera.
     - Una cola es útil cuando se necesita darle preferencia al que llegó primero, como sucede al momento de imprimir documentos.
+    Las pilas se utilizan en muchas aplicaciones que utilizamos con frecuencia: 
+	- Gestión de ventanas en Windows o Linux (cuando cerramos una ventana siempre recuperamos la que teníamos detrás).
+	- Evaluación general de cualquier expresión matemática para evitar tener que calcular el número de variables temporales que hacen falta.
+	- Navegador Web: Se almacenan los sitios previamente visitados cuando el usuario quiere regresar (presiona el botón de regresar).
+	- Editores de texto u otras herramientas: Los cambios efectuados se almacenan en una pila.
 ---
 
 III. CONCLUSIONES
