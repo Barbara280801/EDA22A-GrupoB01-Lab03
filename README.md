@@ -125,8 +125,8 @@ I. SOLUCIÓN DE EJERCICIOS/PROBLEMAS <br>
 			22 - 10 = 12
 	```						
      * Ejercicio 2: Pilas
-      - Para implementar esta estructura, se implementó distintos datos como: push, pop, peek, empty, search y toString.
-      - En el método push se tomó dos casos, que la estructura esté vacía o si ya tenía elementos.
+	- Para implementar esta estructura, se implementó distintos datos como: push, pop, peek, empty, search y toString.
+	- En el método push se tomó dos casos, que la estructura esté vacía o si ya tenía elementos.
         ```java
 		if(empty()){
                   this.tope = new Node<E>(x);
